@@ -4,6 +4,7 @@ from langchain_openai import AzureChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough, RunnableParallel
 import streamlit as st
+import os
 
 os.environ['AZURE_OPENAI_API_KEY'] = st.secrets["AZURE_OPENAI"]["AZURE_OPENAI_API_KEY"]
 os.environ['AZURE_OPENAI_ENDPOINT'] = st.secrets["AZURE_OPENAI"]["AZURE_OPENAI_ENDPOINT"]
